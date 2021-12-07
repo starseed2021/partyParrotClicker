@@ -44,13 +44,21 @@ const clickEffect = event => {
     }
 }
 
+const dblClickEffect = (event) => {
+    alert("It's time to party! ")
+}
+
 const registerEventHandlers = (event) => {
     const mouseoverBox = document.querySelector('#box-mouseover');
     const clickBox = document.querySelector('#box-click');
+    const dblClickBox = document.querySelector('#box-dblclick');
     clickBox.addEventListener("click", clickEffect);
+    dblClickBox.addEventListener("dblclick", dblClickEffect);
+
     mouseoverBox.addEventListener("mouseenter", mouseoverEffect);
     mouseoverBox.addEventListener("mouseleave", mouseleaveEffect);
 }
+
 document.addEventListener("keydown", spacebarEffect); 
 document.addEventListener("keyup", keyUpEffect);   
 document.addEventListener("DOMContentLoaded", registerEventHandlers);
