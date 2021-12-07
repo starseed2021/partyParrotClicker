@@ -1,0 +1,30 @@
+body {
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.container {
+    background-color: antiquewhite;
+    padding: 2% 0 10% 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin:2%;
+}
+
+.box {
+    margin: 2%;
+    padding: 3%;
+    height: 5em;
+    width: 5em;
+    border: 2px solid black;
+    font-size: 0.8em;
+}
+
+.box>p {
+    color: blue;
+    margin: 20%;
+}
